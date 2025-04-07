@@ -5,7 +5,7 @@ Objetivo:Fazer os exercicios d0 1 ao 15
 *****************************************************************************************************************************/
 
 #include <stdio.h>
-#include <math.h>  // Para usar a função M_PI
+#include <math.h>  
 
 int main() {
     char opcao;
@@ -25,7 +25,7 @@ int main() {
         case 'A':  // Cálculo da área do círculo
             printf("Digite o raio do círculo: ");
             scanf("%f", &raio);
-            area = M_PI * pow(raio, 2);  // A = π * r²
+            area = M_PI * pow(raio, 2); 
             printf("A área do círculo de raio %.2f é igual a %.2f m²\n", raio, area);
             break;
 
@@ -34,7 +34,7 @@ int main() {
             scanf("%f", &lado);
             printf("Digite a altura do retângulo: ");
             scanf("%f", &altura);
-            area = lado * altura;  // A = Lado * Altura
+            area = lado * altura;  
             printf("A área do retângulo de lado %.2f e altura %.2f é igual a %.2f m²\n", lado, altura, area);
             break;
 
@@ -45,7 +45,7 @@ int main() {
             scanf("%f", &base_menor);
             printf("Digite a altura do trapézio: ");
             scanf("%f", &altura);
-            area = ((base_maior + base_menor) * altura) / 2;  // A = ((Base Maior + Base Menor) * Altura) / 2
+            area = ((base_maior + base_menor) * altura) / 2; 
             printf("A área do trapézio de base maior %.2f, base menor %.2f e altura %.2f é igual a %.2f m²\n", base_maior, base_menor, altura, area);
             break;
 
@@ -54,7 +54,7 @@ int main() {
             scanf("%f", &base_tri);
             printf("Digite a altura do triângulo: ");
             scanf("%f", &altura_tri);
-            area = (base_tri * altura_tri) / 2;  // A = (Base * Altura) / 2
+            area = (base_tri * altura_tri) / 2;  
             printf("A área do triângulo de base %.2f e altura %.2f é igual a %.2f m²\n", base_tri, altura_tri, area);
             break;
 
