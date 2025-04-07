@@ -32,7 +32,7 @@ int main() {
     } else if (H > 40 && H <= 100) {
         premio = 100.00;
     } else {
-        premio = 0.00; // Caso H seja menor que 0 ou maior que 100
+        premio = 0.00; 
         printf("Valor de H invalido. O valor de H deve estar entre 0 e 100.\n");
     }
 
