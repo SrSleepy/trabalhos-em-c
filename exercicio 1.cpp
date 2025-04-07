@@ -19,25 +19,25 @@ int main() {
     scanf("%d", &idade);
     
     printf("Digite o sexo (M/F): ");
-    scanf(" %c", &sexo); // O espaço antes de %c é necessário para consumir qualquer caractere de nova linha.
+    scanf(" %c", &sexo); 
 
     printf("Digite o valor da mensalidade: ");
     scanf("%f", &mensalidade);
 
     // Aplicando descontos de acordo com o sexo e idade
-    if (sexo == 'F' || sexo == 'f') { // Sexo feminino
+    if (sexo == 'F' || sexo == 'f') { 
         if (idade <= 30) {
-            mensalidade *= 0.8;  // 20% de desconto
+            mensalidade *= 0.8;  
         } else if (idade >= 31 && idade <= 40) {
-            mensalidade *= 0.7;  // 30% de desconto
+            mensalidade *= 0.7;  
         } else {
-            mensalidade *= 0.65; // 35% de desconto
+            mensalidade *= 0.65; 
         }
-    } else if (sexo == 'M' || sexo == 'm') { // Sexo masculino
+    } else if (sexo == 'M' || sexo == 'm') { 
         if (idade <= 25) {
-            // Sem desconto
+            
         } else {
-            mensalidade *= 0.75; // 25% de desconto
+            mensalidade *= 0.75; 
         }
     }
 
