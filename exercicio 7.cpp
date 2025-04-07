@@ -12,10 +12,10 @@ int main() {
 
     // Leitura do nome e sexo
     printf("Digite o nome da pessoa: ");
-    fgets(nome, sizeof(nome), stdin);  // Usando fgets para ler o nome com espaços
+    fgets(nome, sizeof(nome), stdin); 
     
     printf("Digite o sexo da pessoa (M para Masculino, F para Feminino): ");
-    scanf("%c", &sexo);  // Lê o sexo
+    scanf("%c", &sexo);  
 
     // Verificando o sexo e exibindo a mensagem
     if (sexo == 'M' || sexo == 'm') {
@@ -24,7 +24,7 @@ int main() {
         printf("ILMA SRA.\n");
     } else {
         printf("Sexo inválido!\n");
-        return 1;  // Finaliza o programa se o sexo for inválido
+        return 1;  
     }
 
     // Exibindo o nome
